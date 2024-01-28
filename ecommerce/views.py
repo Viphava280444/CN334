@@ -12,3 +12,18 @@ def item_view(request, item_id):
 
     }
     return render(request, 'index.html', context= contexts)
+
+def home_page(request):
+    return render(request, 'home.html')
+
+def category_page(request):
+    return render(request, "category.html")
+
+def product_page(request):
+    return render(request, 'product.html')
+
+def checkout_page(request):
+    return render(request, 'checkout.html')
+
+def contact_page(request):
+    return render(request, 'contact.html')
